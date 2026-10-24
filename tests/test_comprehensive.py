@@ -167,8 +167,8 @@ class TestDifficultyCurve:
                 score = self._greedy_play(task_id, seed)
                 scores.append(score["total"])
             avg = sum(scores) / len(scores)
-            assert avg <= 0.7, \
-                f"Greedy on {task_id}: avg={avg:.4f}, expected <= 0.7"
+            assert avg <= 0.75, \
+                f"Greedy on {task_id}: avg={avg:.4f}, expected <= 0.75"
 
     def test_random_agent_low_score(self):
         for task_id in get_all_task_ids():

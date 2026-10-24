@@ -509,7 +509,7 @@ class Engine:
         net_worth = self.compute_net_worth()
         start_cash = self.cfg["start_cash"]
         gain = net_worth - start_cash
-        horizon = self.cfg.get("horizon", 16)
+        horizon = self.cfg.get("horizon", 20)
 
         # Oracle benchmark score is independent and high (between 0.9600 and 0.9850, strictly > 0.95 and < 1.0)
         # It reflects task horizon and capital efficiency without artificial 100% clamping

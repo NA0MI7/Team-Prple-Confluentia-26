@@ -295,7 +295,7 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 scenarios[pid]["tiers"][diff] = {
                     "key": key,
                     "difficulty": diff,
-                    "horizon": cfg.get("horizon", 14),
+                    "horizon": cfg.get("horizon", 20),
                     "plots": cfg.get("n_plots", 3),
                     "crops": list(cfg.get("crops", {}).keys()),
                     "crops_config": cfg.get("crops", {}),
@@ -1183,7 +1183,7 @@ class DashboardHandler(BaseHTTPRequestHandler):
                 scenarios[pid]["tiers"][diff] = {
                     "key": key,
                     "difficulty": diff,
-                    "horizon": cfg.get("horizon", 14),
+                    "horizon": cfg.get("horizon", 20),
                     "plots": cfg.get("n_plots", 3),
                     "crops": list(cfg.get("crops", {}).keys()),
                     "crops_config": cfg.get("crops", {}),
@@ -1811,8 +1811,8 @@ DASHBOARD_HTML = """<!DOCTYPE html>
       <div class="metrics-bar">
         <div class="metric-card">
           <span class="metric-label">Season Calendar</span>
-          <span class="metric-value" id="disp-day">Day 1 / 14</span>
-          <span class="metric-sub" id="disp-day-progress">Season Day 1 of 14 (Awaiting start)</span>
+          <span class="metric-value" id="disp-day">Day 1 / 20</span>
+          <span class="metric-sub" id="disp-day-progress">Season Day 1 of 20 (Awaiting start)</span>
         </div>
         <div class="metric-card">
           <span class="metric-label">Liquid Cash</span>
@@ -1868,7 +1868,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
             <div id="task-info-card" style="background:rgba(22,10,44,0.9); border:1px solid var(--surface-border); border-radius:8px; padding:10px 12px; margin-bottom:14px; font-size:0.78rem;">
               <div style="display:flex; justify-content:space-between; margin-bottom:4px; align-items:center;">
                 <span id="task-diff" style="font-weight:800; text-transform:uppercase; color:#34d399; font-size:0.8rem;">EASY</span>
-                <span id="task-horizon" style="color:var(--text-muted); font-weight:600;">14 Days Horizon</span>
+                <span id="task-horizon" style="color:var(--text-muted); font-weight:600;">20 Days Horizon</span>
               </div>
               <div style="color:var(--text-muted); margin-bottom:4px;" id="task-params">Plots: 3 | Land Tax: $0.45/day | Start Cash: $45.00</div>
               <div style="color:#ddd6fe; margin-bottom:6px; font-size:0.75rem;" id="task-crops">Crops: wheat, tomato</div>
@@ -2213,13 +2213,13 @@ DASHBOARD_HTML = """<!DOCTYPE html>
       if (!sc || !sc.tiers || !sc.tiers[diff]) return;
       const t = sc.tiers[diff];
 
-      window.currentHorizon = t.horizon || 14;
+      window.currentHorizon = t.horizon || 20;
       window.currentCropsConfig = t.crops_config || {};
 
       const dispDay = document.getElementById('disp-day');
-      if (dispDay) dispDay.innerText = `Day 1 / ${t.horizon || 14}`;
+      if (dispDay) dispDay.innerText = `Day 1 / ${t.horizon || 20}`;
       const dispDayProg = document.getElementById('disp-day-progress');
-      if (dispDayProg) dispDayProg.innerText = `Season Day 1 of ${t.horizon || 14} (Awaiting start)`;
+      if (dispDayProg) dispDayProg.innerText = `Season Day 1 of ${t.horizon || 20} (Awaiting start)`;
 
       const startCashVal = ((t.start_cash || 5000) / 100).toFixed(2);
       const dispCash = document.getElementById('disp-cash');
@@ -2460,7 +2460,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
       const s = d.farm_state;
       if (!s) return;
 
-      const horizon = d.horizon || (s && s.horizon) || window.currentHorizon || 14;
+      const horizon = d.horizon || (s && s.horizon) || window.currentHorizon || 20;
       const curDay = s.day !== undefined ? s.day : 1;
       const pctDay = Math.min(100, Math.round((curDay / horizon) * 100));
 

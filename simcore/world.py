@@ -53,7 +53,7 @@ TASK_CONFIGS = {
         "theme": "seasonal_harvest",
         "difficulty": "easy",
         "display_name": "Seasonal Cycles & Spoilage (Easy)",
-        "horizon": 14,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "wheat": {"seed_cost": 180, "grow_days": 3, "yield_units": 8, "base_price": 120, "spoil_days": None},
@@ -72,7 +72,7 @@ TASK_CONFIGS = {
         "theme": "seasonal_harvest",
         "difficulty": "hard",
         "display_name": "Seasonal Cycles & Spoilage (Hard)",
-        "horizon": 28,
+        "horizon": 20,
         "n_plots": 6,
         "crops": {
             "wheat": {"seed_cost": 200, "grow_days": 3, "yield_units": 8, "base_price": 130, "spoil_days": 6},
@@ -96,7 +96,7 @@ TASK_CONFIGS = {
         "theme": "market_volatility",
         "difficulty": "easy",
         "display_name": "Market Volatility & Crash (Easy)",
-        "horizon": 14,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "wheat": {"seed_cost": 170, "grow_days": 3, "yield_units": 8, "base_price": 120, "spoil_days": None},
@@ -115,7 +115,7 @@ TASK_CONFIGS = {
         "theme": "market_volatility",
         "difficulty": "hard",
         "display_name": "Market Volatility & Crash (Hard)",
-        "horizon": 30,
+        "horizon": 20,
         "n_plots": 6,
         "crops": {
             "wheat": {"seed_cost": 190, "grow_days": 2, "yield_units": 7, "base_price": 125, "spoil_days": 6},
@@ -139,7 +139,7 @@ TASK_CONFIGS = {
         "theme": "credit_leverage",
         "difficulty": "easy",
         "display_name": "Credit Leverage & Solvency (Easy)",
-        "horizon": 15,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "wheat": {"seed_cost": 180, "grow_days": 3, "yield_units": 8, "base_price": 120, "spoil_days": None},
@@ -152,7 +152,7 @@ TASK_CONFIGS = {
         "loans_on": True,
         "credit_limit": 5000,
         "daily_interest_permille": 3,
-        "repay_deadline_day": 14,
+        "repay_deadline_day": 18,
         "forecast_noise": 4,
         "slippage_rate": 0.015,
     },
@@ -160,7 +160,7 @@ TASK_CONFIGS = {
         "theme": "credit_leverage",
         "difficulty": "hard",
         "display_name": "Credit Leverage & Solvency (Hard)",
-        "horizon": 26,
+        "horizon": 20,
         "n_plots": 6,
         "crops": {
             "wheat": {"seed_cost": 180, "grow_days": 2, "yield_units": 7, "base_price": 125, "spoil_days": 8},
@@ -187,7 +187,7 @@ TASK_CONFIGS = {
         "theme": "climate_shocks",
         "difficulty": "easy",
         "display_name": "Climate Shocks & Weather (Easy)",
-        "horizon": 14,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "wheat": {"seed_cost": 170, "grow_days": 3, "yield_units": 8, "base_price": 120, "spoil_days": 8},
@@ -205,7 +205,7 @@ TASK_CONFIGS = {
         "theme": "climate_shocks",
         "difficulty": "hard",
         "display_name": "Climate Shocks & Weather (Hard)",
-        "horizon": 28,
+        "horizon": 20,
         "n_plots": 6,
         "crops": {
             "wheat": {"seed_cost": 180, "grow_days": 2, "yield_units": 8, "base_price": 125, "spoil_days": 6},
@@ -229,7 +229,7 @@ TASK_CONFIGS = {
         "theme": "commodity_arbitrage",
         "difficulty": "easy",
         "display_name": "Commodity Arbitrage & Scarcity (Easy)",
-        "horizon": 14,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "wheat": {"seed_cost": 160, "grow_days": 2, "yield_units": 7, "base_price": 115, "spoil_days": None},
@@ -247,7 +247,7 @@ TASK_CONFIGS = {
         "theme": "commodity_arbitrage",
         "difficulty": "hard",
         "display_name": "Commodity Arbitrage & Scarcity (Hard)",
-        "horizon": 30,
+        "horizon": 20,
         "n_plots": 6,
         "crops": {
             "corn": {"seed_cost": 210, "grow_days": 3, "yield_units": 9, "base_price": 95, "spoil_days": None},

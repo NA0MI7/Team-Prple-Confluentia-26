@@ -5,7 +5,7 @@ Preserved for reference, historical benchmarks, and backward-compatible tests.
 
 TASK_CONFIGS_BACKUP = {
     "farm_basic": {
-        "horizon": 14,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "wheat": {
@@ -23,7 +23,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "easy",
     },
     "farm_two_crops": {
-        "horizon": 15,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "wheat": {
@@ -45,7 +45,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "easy",
     },
     "farm_seasons": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "wheat": {
@@ -72,7 +72,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "medium",
     },
     "farm_events": {
-        "horizon": 18,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "wheat": {
@@ -99,7 +99,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "medium",
     },
     "farm_credit": {
-        "horizon": 18,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "wheat": {
@@ -167,7 +167,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "hard",
     },
     "farm_sprint": {
-        "horizon": 10,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "radish": {
@@ -189,7 +189,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "easy",
     },
     "farm_spoilage": {
-        "horizon": 15,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "tomato": {
@@ -216,7 +216,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "medium",
     },
     "farm_drought": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "wheat": {
@@ -243,7 +243,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "hard",
     },
     "farm_market_rush": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "wheat": {
@@ -270,7 +270,7 @@ TASK_CONFIGS_BACKUP = {
         "difficulty": "hard",
     },
     "econ_cobweb_cycle": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "strawberry": {
@@ -294,7 +294,7 @@ TASK_CONFIGS_BACKUP = {
         "theory": "Cobweb Theorem (Mordecai Ezekiel, 1938)",
     },
     "econ_dutch_disease": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "saffron": {
@@ -318,7 +318,7 @@ TASK_CONFIGS_BACKUP = {
         "theory": "Dutch Disease / Resource Curse (Corden & Neary, 1982)",
     },
     "econ_liquidity_mismatch": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "grape": {
@@ -345,7 +345,7 @@ TASK_CONFIGS_BACKUP = {
         "theory": "Diamond-Dybvig Maturity Transformation (1983)",
     },
     "econ_cournot_elasticity": {
-        "horizon": 15,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "tomato": {
@@ -369,7 +369,7 @@ TASK_CONFIGS_BACKUP = {
         "theory": "Cournot Oligopoly & Price Elasticity of Demand (1838)",
     },
     "econ_pigouvian_commons": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 4,
         "crops": {
             "tomato": {
@@ -393,7 +393,7 @@ TASK_CONFIGS_BACKUP = {
         "theory": "Pigouvian Taxes & Tragedy of the Commons (Pigou, 1920)",
     },
     "econ_hotelling_arbitrage": {
-        "horizon": 16,
+        "horizon": 20,
         "n_plots": 3,
         "crops": {
             "corn": {
