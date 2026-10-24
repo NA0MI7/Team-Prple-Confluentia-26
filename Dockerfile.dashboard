@@ -2,14 +2,10 @@ FROM python:3.11-slim
 ENV PYTHONPATH=/app PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
 WORKDIR /app
 
-RUN pip install --no-cache-dir pytest
-
 COPY simcore/ /app/simcore/
 COPY harness/ /app/harness/
 COPY sandbox/ /app/sandbox/
 COPY scripts/ /app/scripts/
-COPY tests/ /app/tests/
-COPY pytest.ini /app/pytest.ini
 
 EXPOSE 8500
 
