@@ -20,12 +20,16 @@ Built strictly to the **"Build an RL Environment That Can't Be Broken"** hackath
 
 ```bash
 # 1. Create environment file from template
-cp .env.example .env
-# Edit .env with your MODEL, API_KEY, BASE_URL
+copy .env.example .env    # Windows (or cp .env.example .env on Linux/macOS)
 
-# 2. Run the environment (builds image, runs baselines, then executes model)
-docker compose up --build --abort-on-container-exit --exit-code-from harness
+# 2. Launch the interactive Dashboard Studio in Docker
+docker compose up --build
+
+# 3. Open in your browser:
+# http://localhost:8500
 ```
+
+*(To run headless batch evaluation instead: `docker compose --profile eval up --build --abort-on-container-exit --exit-code-from harness`)*
 
 ---
 
