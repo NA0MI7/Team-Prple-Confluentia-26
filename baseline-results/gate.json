@@ -1,0 +1,219 @@
+{
+  "climate_shocks": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "climate_shocks_easy": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "climate_shocks_hard": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "commodity_arbitrage": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "commodity_arbitrage_easy": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "commodity_arbitrage_hard": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.9706,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "credit_leverage": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "credit_leverage_easy": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "credit_leverage_hard": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "econ_cobweb_cycle": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "econ_cournot_elasticity": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "econ_dutch_disease": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "econ_hotelling_arbitrage": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.9703,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "econ_liquidity_mismatch": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "econ_pigouvian_commons": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_basic": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.9838,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_crash": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_credit": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_drought": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_events": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_market_rush": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_seasons": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_spoilage": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_sprint": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.9779,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "farm_two_crops": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "market_volatility": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "market_volatility_easy": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "market_volatility_hard": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "seasonal_harvest": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "seasonal_harvest_easy": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  },
+  "seasonal_harvest_hard": {
+    "oracle_pass": true,
+    "noop_pass": true,
+    "oracle_total": 0.985,
+    "noop_total": 0.0,
+    "PASS": true
+  }
+}

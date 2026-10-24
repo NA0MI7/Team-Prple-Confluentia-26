@@ -1,0 +1,14 @@
+.env
+*.env
+logs/*
+!logs/.gitkeep
+inputs/*
+!inputs/.gitkeep
+!inputs/append.txt
+!inputs/README.md
+__pycache__/
+*.pyc
+*.py[cod]
+.pytest_cache/
+*.zip
+scratch/

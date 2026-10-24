@@ -1,0 +1,17 @@
+{
+  "task_id": "farm_seasons",
+  "seed": 34,
+  "model": "mock/chaos",
+  "termination": "success",
+  "steps": 9,
+  "score": {
+    "gain_cents": -1200,
+    "target_cents": 16711,
+    "profit": 0.0,
+    "debt_ok": 1,
+    "total": 0.0,
+    "net_worth_cents": 4300
+  },
+  "elapsed_seconds": 0.2,
+  "run_id": "dashboard_mock_chaos_farm_seasons_34_1792836097"
+}

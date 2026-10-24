@@ -1,0 +1,53 @@
+services:
+  sandbox:
+    build:
+      context: .
+      dockerfile: Dockerfile.sandbox
+    read_only: true
+    tmpfs:
+      - /tmp:size=10M
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    init: true
+    pids_limit: 64
+    mem_limit: 512m
+    cpus: 1.0
+    networks:
+      - internal
+    environment:
+      - SANDBOX_PORT=8000
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('127.0.0.1', 8000), 2).close()"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  harness:
+    build:
+      context: .
+      dockerfile: Dockerfile.harness
+    depends_on:
+      sandbox:
+        condition: service_healthy
+    environment:
+      - MODEL=${MODEL:-mock/solver}
+      - API_KEY=${API_KEY:-}
+      - BASE_URL=${BASE_URL:-https://api.openai.com/v1}
+      - TASK_ID=${TASK_ID:-farm_seasons}
+      - SEED=${SEED:-0}
+      - MODE=${MODE:-full}
+      - APPEND_FILE=${APPEND_FILE:-}
+      - MAX_TOKENS=${MAX_TOKENS:-}
+      - SANDBOX_URL=http://sandbox:8000
+    networks:
+      - internal
+      - default
+    volumes:
+      - ./logs:/app/logs
+      - ./inputs:/app/inputs:ro
+
+networks:
+  internal:
+    internal: true

@@ -1,0 +1,19 @@
+{
+  "task_id": "farm_drought",
+  "seed": 0,
+  "model": "gpt-6-luna",
+  "termination": "success",
+  "steps": 26,
+  "score": {
+    "gain_cents": 17208,
+    "target_cents": 18091,
+    "profit": 0.9369,
+    "debt_ok": 1,
+    "total": 0.9369,
+    "net_worth_cents": 22208,
+    "oracle_profit_cents": 18091,
+    "oracle_score": 0.985
+  },
+  "elapsed_seconds": 203.4,
+  "run_id": "dashboard_gpt-6-luna_farm_drought_0_1792863944"
+}

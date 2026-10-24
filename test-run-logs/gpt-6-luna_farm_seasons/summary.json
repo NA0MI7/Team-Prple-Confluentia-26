@@ -1,0 +1,17 @@
+{
+  "task_id": "farm_seasons",
+  "seed": 0,
+  "model": "gpt-6-luna",
+  "termination": "step_cap",
+  "steps": 40,
+  "score": {
+    "gain_cents": -2900,
+    "target_cents": 24820,
+    "profit": 0.0,
+    "debt_ok": 1,
+    "total": 0.0,
+    "net_worth_cents": 4100
+  },
+  "elapsed_seconds": 0.3,
+  "run_id": "gpt-6-luna_0_1792753336"
+}

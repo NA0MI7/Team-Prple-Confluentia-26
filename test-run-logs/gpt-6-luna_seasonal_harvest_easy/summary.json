@@ -1,0 +1,19 @@
+{
+  "task_id": "seasonal_harvest_easy",
+  "seed": 0,
+  "model": "gpt-6-luna",
+  "termination": "success",
+  "steps": 28,
+  "score": {
+    "gain_cents": 19186,
+    "target_cents": 15718,
+    "profit": 0.9887,
+    "debt_ok": 1,
+    "total": 0.9887,
+    "net_worth_cents": 23686,
+    "oracle_profit_cents": 15718,
+    "oracle_score": 0.985
+  },
+  "elapsed_seconds": 101.6,
+  "run_id": "dashboard_gpt-6-luna_seasonal_harvest_easy_0_1792865681"
+}

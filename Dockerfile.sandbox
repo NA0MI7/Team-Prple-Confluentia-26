@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+ENV PYTHONPATH=/app PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+RUN useradd --no-create-home --uid 1000 sandbox
+WORKDIR /app
+COPY simcore/ /app/simcore/
+COPY sandbox/ /app/sandbox/
+USER sandbox
+EXPOSE 8000
+CMD ["python", "-u", "sandbox/server.py"]
