@@ -309,25 +309,26 @@ def build_deck():
     pdf.set_x(23)
     pdf.cell(0, 4, "and provide a full live visual studio for transparent human and automated evaluation.", new_x="LMARGIN", new_y="NEXT")
 
-    # ================= SLIDE 4: Dual-Container Zero-Trust =================
+    # ================= SLIDE 4: System Architecture =================
     setup_slide(
-        "Dual-Container Zero-Trust Architecture",
-        "Physical runtime isolation between untrusted agent execution and deterministic scoring verifier.",
+        "System Architecture: Dual-Container Physical Isolation",
+        "Sealed HTTP Sandbox, Independent Orchestration Harness, and Out-of-Band Replay Verifier.",
         "04"
     )
     pdf.set_font("Helvetica", "", 10.5)
     pdf.set_text_color(30, 41, 59)
     bullets_04 = [
-        "- Sealed Sandbox Container: Docker network internal: true (no internet access), read-only root filesystem, dropped capabilities (cap_drop: ALL, no-new-privileges).",
-        "- Zero Attack Surface: Sandbox exposes strictly 11 domain HTTP tools (plant, harvest, sell, loan, advance_days, etc.); zero bash, python exec, or file tools.",
-        "- Isolated Orchestration Harness: Connects to gpt-6-luna via litellm gateway, enforces 40-step budget, 2KB tool caps, and history compression.",
-        "- Cryptographic Out-of-Band Scoring: Sandbox never computes final score; harness replays verified action log against fresh engine.",
-        "- Ultra-Fast Clean Build: Pinned Python 3.11-slim standard library; clean Docker build completes in <30 seconds from zero cache."
+        "- Sealed Sandbox Container: Docker network internal: true (no external internet), read-only root filesystem, and dropped Linux capabilities (cap_drop: ALL, no-new-privileges).",
+        "- Strictly Typed Domain Interface: Exposes strictly 11 agricultural economic RPC tools; zero bash, terminal, Python eval, or arbitrary file system tools.",
+        "- Independent Orchestration Harness: Connects to gpt-6-luna via LiteLLM gateway, enforces 40-step budget, 2KB tool response limits, and turn history compression.",
+        "- Out-of-Band Cryptographic Verification: Sandbox never computes final score; an independent verifier replays logged actions against a clean engine via SHA-256 state hashes.",
+        "- Pure Python Standard Library Runtime: 0 third-party packages in sandbox runtime; builds in <30s from scratch with 100% deterministic reproducibility.",
+        "- Integer-Cent Accounting Engine: All economic transactions (cash, inventory, debt, taxes) are computed strictly in integer cents, eliminating float rounding drift."
     ]
     for b in bullets_04:
         pdf.set_x(22)
-        pdf.multi_cell(253, 7.2, b)
-        pdf.ln(2.0)
+        pdf.multi_cell(253, 6.5, b)
+        pdf.ln(1.5)
 
     # ================= SLIDE 5: Microeconomic Depth & 20-Day Horizon =================
     setup_slide(
